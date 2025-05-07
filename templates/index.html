@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BLE Device Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0 10px;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+        #rawMap, #predictionMap {
+            height: 400px;
+            margin-bottom: 30px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>📡 Raw Distance Estimates</h2>
+<div id="rawMap"></div>
+
+<h2>📍 Multilaterated Device Positions</h2>
+<div id="predictionMap"></div>
+
+<!-- Load JS after DOM -->
+<script src="https://cdn.socket.io/4.6.0/socket.io.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<script>
+
+});
+</script>
+</body>
+</html>
+
