@@ -88,4 +88,5 @@ def handle_distance_data(data):
         print(f"❌ Error handling distance_data: {e}")
 
 if __name__ == "__main__":
-    socketio.run(app, debug=True)
+    socketio.run(app, debug=True, port=5050)
+

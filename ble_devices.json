@@ -1,80 +1,80 @@
 {
-  "11:14:22:65:BE:57": {
-    "payload": "\u0001\t!\nv@tDESKTOP-2C5PM81",
-    "rssi": -93.46,
-    "distance": 11.94,
-    "last_seen": "2025-05-08T00:01:03.657033"
-  },
-  "2A:47:2D:1B:56:45": {
-    "payload": "\u0001\t \u00022B[#N.4|\u000b\\\bd\u0017",
-    "rssi": -43.19,
-    "distance": 0.16,
-    "last_seen": "2025-05-08T00:01:06.733084"
-  },
   "14:55:B9:87:C0:C2": {
     "payload": "Nokia-C0-C2",
-    "rssi": -86.5,
-    "distance": 7.24,
-    "last_seen": "2025-05-08T00:01:02.830091"
+    "rssi": -86.78,
+    "distance": 7.38,
+    "last_seen": "2025-05-08T02:30:01.195122"
+  },
+  "32:D7:0E:1A:D3:E6": {
+    "payload": "\u0001\t!\nv@tDESKTOP-2C5PM81",
+    "rssi": -89.32,
+    "distance": 8.86,
+    "last_seen": "2025-05-08T02:09:27.724742"
+  },
+  "41:45:26:9B:CB:9B": {
+    "payload": "\u0016\b\u0000\u0013aqh",
+    "rssi": -91.25,
+    "distance": 10.19,
+    "last_seen": "2025-05-08T02:10:30.916833"
   },
   "F4:93:A0:99:C0:15": {
     "payload": "\u0015\u0002\u0001\u0016\u0001\u0001\u0001",
-    "rssi": -90.23,
-    "distance": 9.46,
-    "last_seen": "2025-05-08T00:01:03.196730"
+    "rssi": -93.0,
+    "distance": 11.55,
+    "last_seen": "2025-05-08T02:29:59.440010"
   },
-  "25:DE:1C:94:14:91": {
-    "payload": "J\u0017#WXV1\u00112-=\u001ch\u007f\u001b",
-    "rssi": -72.76,
-    "distance": 3.23,
-    "last_seen": "2025-05-08T00:01:06.026317"
+  "31:7E:0B:9C:55:62": {
+    "payload": "J\u0017#4WBS\u00112ah\u001bQ!\u0001\u0001<",
+    "rssi": -73.62,
+    "distance": 3.48,
+    "last_seen": "2025-05-08T02:09:10.954369"
   },
-  "7E:E6:4D:8D:41:5C": {
-    "payload": "\u0747\bHK PUNEE",
-    "rssi": -57.81,
-    "distance": 0.87,
-    "last_seen": "2025-05-07T23:59:56.556247"
+  "0E:38:67:7D:58:08": {
+    "payload": "J\u0017#4WBS\u00112ah\u001bQ!\u0001\u0001<",
+    "rssi": -73.59,
+    "distance": 3.47,
+    "last_seen": "2025-05-08T02:15:13.955667"
   },
-  "5A:E4:8B:C7:D4:D7": {
-    "payload": "\u0016\b\u0000Fn\u0015\u0016",
-    "rssi": -87.17,
-    "distance": 7.59,
-    "last_seen": "2025-05-08T00:00:25.383470"
+  "24:62:24:86:85:CF": {
+    "payload": "\u0001\t!\nv@tDESKTOP-2C5PM81",
+    "rssi": -93.59,
+    "distance": 12.05,
+    "last_seen": "2025-05-08T02:25:27.256659"
   },
-  "6A:C8:99:05:FA:19": {
-    "payload": "+\bHK PUNEE\u001bVE[\u0559\u0015",
-    "rssi": -84.67,
-    "distance": 6.34,
-    "last_seen": "2025-05-08T00:00:16.880356"
+  "C3:8A:3A:84:7B:E1": {
+    "payload": "\u0012\u0002\u0000\u0001",
+    "rssi": -104.09,
+    "distance": 25.64,
+    "last_seen": "2025-05-08T02:11:12.395280"
   },
-  "6E:6E:1C:C7:76:4E": {
-    "payload": "z_\bHK PUNEE\u001bVE[\u05d4\u0014",
-    "rssi": -75.85,
-    "distance": 4.21,
-    "last_seen": "2025-05-08T00:00:37.800045"
+  "4F:20:6B:80:BE:11": {
+    "payload": "\u0016\b\u0000\u0004g;c",
+    "rssi": -91.22,
+    "distance": 10.16,
+    "last_seen": "2025-05-08T02:29:33.324191"
   },
-  "6E:F4:44:0D:DB:EB": {
-    "payload": "\bHK PUNEE\u001bVEeW[",
-    "rssi": -69.12,
-    "distance": 2.37,
-    "last_seen": "2025-05-08T00:00:57.890954"
+  "2E:B2:55:88:0F:D8": {
+    "payload": "J\u0017#4WBS\u00112ah\u001bQ!\u0001\u0001<",
+    "rssi": -74.42,
+    "distance": 3.73,
+    "last_seen": "2025-05-08T02:20:56.867707"
   },
-  "69:1C:0D:79:33:D5": {
-    "payload": "\u00179\bHK PUNEE\u001bVE[\u04d9\u0015",
-    "rssi": -58.66,
-    "distance": 0.96,
-    "last_seen": "2025-05-08T00:00:17.129245"
+  "1E:C2:8C:4F:85:1F": {
+    "payload": "J\u0017#4WBS\u00112ah\u001bQ!\u0001\u0001<",
+    "rssi": -73.84,
+    "distance": 3.54,
+    "last_seen": "2025-05-08T02:27:56.102971"
   },
-  "6F:95:20:30:5A:CA": {
-    "payload": "e\bHK PUNEE\u001bVE[\u0514\u0014",
-    "rssi": -80.47,
-    "distance": 4.69,
-    "last_seen": "2025-05-08T00:00:37.668152"
+  "23:96:29:1D:32:50": {
+    "payload": "\u0001\t!\nv@tDESKTOP-2C5PM81",
+    "rssi": -89.9,
+    "distance": 9.24,
+    "last_seen": "2025-05-08T02:30:01.551061"
   },
-  "62:C5:C5:29:9A:E9": {
-    "payload": "\bHK PUNEE\u001bVE[\u04d4\u0014",
-    "rssi": -76.34,
-    "distance": 4.39,
-    "last_seen": "2025-05-08T00:00:57.749367"
+  "38:48:20:9C:32:E7": {
+    "payload": "J\u0017#4WBS\u00112ah\u001bQ!\u0001\u0001<",
+    "rssi": -72.85,
+    "distance": 3.26,
+    "last_seen": "2025-05-08T02:29:53.166669"
   }
 }
