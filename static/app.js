@@ -1,17 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     const rawMap = L.map('rawMap', {
         zoomControl: true,
-        maxZoom: 22,  // increased zoom level
+        maxZoom: 22,
     }).setView([12.24755, 76.715283], 15);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 22,
         attribution: '&copy; OpenStreetMap contributors'
     }).addTo(rawMap);
 
-
     const predictionMap = L.map('predictionMap', {
         zoomControl: true,
-        maxZoom: 22,  // same here
+        maxZoom: 22,
     }).setView([12.24755, 76.715283], 15);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(predictionMap);
 
@@ -19,14 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
     L.marker(triangulator).addTo(rawMap).bindPopup("Triangulator (Laptop)");
     L.marker(triangulator).addTo(predictionMap).bindPopup("Triangulator (Laptop)");
 
-    const socket = io();
+    const socket = io("http://localhost:5050"); // Ensure correct connection
     const circles = {}; // for device_data updates
 
     socket.on("connect", () => {
         socket.emit("request_device_data");
     });
 
-    // 1. Initial device data (BLE JSON fallback) → plotted as approx offset from triangulator
+    // 1. Initial device data (BLE JSON fallback)
     socket.on("device_data", (data) => {
         const devices = data.devices;
         const baseLat = data.triangulator[0];
@@ -68,7 +67,15 @@ document.addEventListener("DOMContentLoaded", () => {
     socket.on("device_prediction", (data) => {
         const { predicted_location, payload } = data;
 
-        const marker = L.marker(predicted_location).addTo(predictionMap);
-        marker.bindPopup(`${payload}`);
+       console.log("Received multilateration prediction:", data);
+
+
+        // Check if predicted_location exists and is a valid array with two elements (lat, lng)
+        if (Array.isArray(predicted_location) && predicted_location.length === 2) {
+            const marker = L.marker(predicted_location).addTo(predictionMap);
+            marker.bindPopup(`${payload}`);
+        } else {
+            console.warn("Invalid predicted location data:", predicted_location);
+        }
     });
-})
+});

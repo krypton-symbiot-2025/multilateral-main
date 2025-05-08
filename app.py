@@ -29,7 +29,7 @@ def send_device_data():
         emit("device_data", {
             "devices": devices,
             "triangulator": triangulator_location
-        })
+        },broadcast=True, namespace="/")
 
 @socketio.on("distance_data")
 def handle_distance_data(data):
@@ -58,7 +58,7 @@ def handle_distance_data(data):
 
         print(f"📡 {device_id} from {coords}: distance={distance}m rssi={rssi} var={rssi_variance:.2f}")
 
-        if len(device_measurements[device_id]) >= 3:
+        if len(device_measurements[device_id]) >= 2:
             anchors = list(device_measurements[device_id].keys())
             distances = [device_measurements[device_id][c]["distance"] for c in anchors]
             variances = [device_measurements[device_id][c]["variance"] for c in anchors]
@@ -74,7 +74,7 @@ def handle_distance_data(data):
                     "anchor": anchor_coord,
                     "distance": data["distance"],
                     "payload": data["payload"]
-                }, broadcast=True)
+                }, broadcast=True, namespace="/")
 
             # Emit final multilaterated prediction separately
             socketio.emit("device_prediction", {
@@ -82,7 +82,7 @@ def handle_distance_data(data):
                 "predicted_location": predicted,
                 "sources": anchors,
                 "payload": payload
-            }, broadcast=True)
+            },broadcast=True, namespace="/")
 
     except Exception as e:
         print(f"❌ Error handling distance_data: {e}")
